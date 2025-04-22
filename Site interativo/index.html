@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="inicio">
+        <button id="botaoClique">💘 Clique</button>
+    </div>
+
+    <div id="conteudo" style="display: none;">
+        <!-- Fundo para os corações -->
+         <div id="fundo"></div>
+
+        <!-- Player do Spotify -->
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/0bOqCHcUOMEDoDqYUL0PLW?si=d3a7ddaad20d4d43" 
+    width="300" height="80" frameBorder="0" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+
+        <div id="galeria">
+            <img src="imagens/maria clara-200.jpg" alt="Foto 1">
+            <img src="imagens/meu amor-200.JPG" alt="Foto 2">
+            <img src="imagens/minha vida.jpg" alt="Foto 3">
+        </div>
+
+        <div id="contador">
+            <p>🤍 Eu te amo há:</p>
+            <p><span id="contadorValor">0</span></p>
+        </div>
+
+        <!-- Linha separadora -->
+         <hr class="linha-separadora">
+
+        <footer>
+            <p>A Cada dia que passa, meu coração se enche mais de carinho e admiração por você. Cada sorriso seu <br>
+            ilumina o meu mundo, e cada abraço me faz sentir que estou exatamente onde deveria estar. Você é a <br>
+        razão dos meus melhores sorrisos. e tudo ao seu lado se torna mais bonito e significativo. Eu sempre <br>
+        irei te amar!🤍</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

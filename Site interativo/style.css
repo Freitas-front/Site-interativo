@@ -1,0 +1,118 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #2f0853, #ff758c);
+    color: #fff;
+}
+
+#fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    z-index: -1; /* Fica atrás do conteúdo */
+    overflow: hidden;
+}
+
+.coraçao {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('imagens/coração-branco.png') no-repeat center center;
+    background-size: contain;
+    clip-path: polygon(
+        50% 0%,
+        100% 35%,
+        80% 100%, 
+        50% 80%, 
+        20% 100%, 
+        0% 35%
+        ); /* Forma de coração */
+    animation: cair 5s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background: linear-gradient(135deg, #2f0853, #ff758c); /* Fundo do botão */
+}
+
+#botaoClique {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: #fff;
+    color: #ff758c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#botaoClique:hover {
+    background: #ffeb3b;
+}
+
+#conteudo iframe {
+    display: block;
+    margin: 2rem auto;
+    border: none;
+    width: 300px; /* Largura do iframe */
+    height: 200px; /* Altura do iframe */
+}
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+#galeria img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente oculto */
+}
+
+#galeria img:first-child {
+    display: block; /* Mostra a primeira imagem */
+}
+
+#contador {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+}
+
+.linha-separadora {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.5); /* Linha separadora */
+    margin: 2rem auto;
+}
